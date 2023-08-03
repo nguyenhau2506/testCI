@@ -18,7 +18,9 @@ describe("Login Functionality", function () {
 
         // Find the email and password input elements and submit the login form without filling them
         await driver.findElement(By.name("email")).sendKeys("1", Key.RETURN);
-        await driver.findElement(By.name("password")).sendKeys("1", Key.RETURN);
+        await driver
+            .findElement(By.name("password"))
+            .sendKeys("12", Key.RETURN);
 
         // Wait for the error message to appear
         await driver.wait(
