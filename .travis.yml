@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+    - "14" # Replace with the Node.js version you want to use
+addons:
+    chrome: stable # Add Chrome (or other browsers) if you need them for Selenium tests
+install:
+    - npm install
+script:
+    - npm test
