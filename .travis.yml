@@ -2,7 +2,8 @@ language: node_js
 node_js:
     - "14"
 addons:
-    chrome: stable 
+    chrome: stable
+install:
     - npm install
 script:
     - npm test
